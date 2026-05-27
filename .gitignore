@@ -1,0 +1,49 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large files and datasets
+data/
+*.npz
+*.npy
+!models/sift_centers.npy
+
+# Model weights and checkpoints
+*.keras
+*.h5
+*.ckpt
+models/backups/
+models/benchmark/
+models/cache/
+models/cache_bench/
+models/taco_baseline/
+
+# Log files and tasks
+*.log
+task-*.log
+models/logs/
+
+# Local configuration and notes
+*.txt
+!requirements.txt
+!reports/benchmark_trashnet.txt
+
+# LaTeX temporary files
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+
+# OS-specific files
+.DS_Store
+Thumbs.db

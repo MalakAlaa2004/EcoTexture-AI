@@ -1,0 +1,23 @@
+===============================================================================================
+  BENCHMARK RESULTS: TrashNet (Waste Material Classification)
+  Generated: 2026-05-28 00:09:17
+  Comparison: Original Benchmark Models vs EcoTexture SOTA Hybrid
+===============================================================================================
+
+  ORIGINAL BENCHMARK USED: Frozen backbones, 128×128 images
+  ECOTEXTURE SOTA USES:    Fine-tuned EfficientNetB0, 224×224 + SIFT Cross-Attn
+
+Model                                    |  Val Acc | Test Acc |      F1 |    FPS |    Params
+------------------------------------------------------------------------------------------
+EcoTexture_SOTA                          |  91.81% |  89.38% | 89.35% |   3.1 | 5,670,569 ★
+Hybrid_MobileNet_SIFT                    |  80.68% |  77.78% | 77.66% |   2.6 | 2,533,958
+Pure_MobileNet                           |  77.75% |  76.07% | 75.89% |   5.3 | 2,428,358
+Hybrid_CNN_SIFT                          |  51.22% |  49.57% | 52.50% |   5.0 |   136,486
+Cross_Attention_Benchmark                |  44.13% |  43.22% | 37.42% |   5.6 |   874,694
+Pure_ResNet50                            |  44.25% |  42.12% | 41.61% |   4.0 | 23,859,462
+Pure_EfficientNet                        |  45.60% |  39.80% | 40.65% |   7.5 | 6,089,686
+Pure_CNN                                 |  39.61% |  35.16% | 38.10% |  11.5 |    30,886
+
+──────────────────────────────────────────────────────────────────────────────────────────
+  ★ EcoTexture SOTA vs best baseline (Hybrid_MobileNet_SIFT): +11.60%
+──────────────────────────────────────────────────────────────────────────────────────────
